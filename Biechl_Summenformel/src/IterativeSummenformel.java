@@ -6,11 +6,11 @@ public class IterativeSummenformel {
     }
 
     public static int summe(int n){
-        int p = 1;
+        int sum = 1;
         while(n > 1){
-            p = p + n;
+            sum = sum + n;
             n--;
         }
-        return p;
+        return sum;
     }
 }
