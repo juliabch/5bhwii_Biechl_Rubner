@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="405b0df0-bfa2-4a14-a2cd-3b44c75e1c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IterativeSummenformel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IterativeSummenformel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RekursiveSummenformel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RekursiveSummenformel.java" afterDir="false" />
-    </list>
+    <list default="true" id="405b0df0-bfa2-4a14-a2cd-3b44c75e1c3a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +73,7 @@
       <updated>1667458514185</updated>
       <workItem from="1667458518805" duration="573000" />
       <workItem from="1667468820335" duration="1944000" />
+      <workItem from="1668071126963" duration="25000" />
     </task>
     <servers />
   </component>
@@ -89,7 +85,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
