@@ -2,7 +2,7 @@ public class BinarySearch {
 
     public static void binarySearch(char arr[], int first, int last, char val){
 
-        while( first <= last ){
+        if( first <= last ){
             //Ermittlung der Mitte des durchzusuchenden Arrays
             int mid = first + (last - first)/2;
 
@@ -19,7 +19,6 @@ public class BinarySearch {
             // else if für den Fall wenn, mid der gesuchte Buchstabe ist
             else if ( arr[mid] == val ){
                 System.out.println("Element is found at index: " + mid);
-                break;
             }
             // der gesuchte Buchstabe befindet sich in der ersten Hälfte des Arrays
             else{

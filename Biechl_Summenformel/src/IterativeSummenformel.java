@@ -1,6 +1,5 @@
 public class IterativeSummenformel {
     public static void main(String[] args) {
-
         System.out.println("Summenformel von 6: ");
         System.out.println(summe(6));
     }
