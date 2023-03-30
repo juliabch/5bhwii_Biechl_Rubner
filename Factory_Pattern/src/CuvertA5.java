@@ -1,16 +1,16 @@
 public class CuvertA5 extends ACuvert {
-    private String size;
+    private Size size;
     private String measure;
     private double weight;
 
-    public CuvertA5(String s, String m, double w){
+    public CuvertA5(Size s, String m, double w){
         this.size = s;
         this.measure = m;
         this.weight = w;
     }
 
     @Override
-    public String getSize() {
+    public Size getSize() {
         return this.size;
     }
 

@@ -1,6 +1,6 @@
 public abstract class ACuvert {
 
-    public abstract String getSize();
+    public abstract Size getSize();
     public abstract String getMeasure();
     public abstract double getWeight();
 
