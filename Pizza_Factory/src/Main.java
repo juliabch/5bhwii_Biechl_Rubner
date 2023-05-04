@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        APizza b = PizzaFactory.getPizza(Location.Berlin, Topping.Calzone);
+        APizza b = PizzaFactory.getPizza(Location.Hamburg, Topping.Calzone);
 
         b.Prepare();
         b.Cut();
