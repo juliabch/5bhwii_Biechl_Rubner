@@ -1,0 +1,18 @@
+Lösen Sie mittels Proxy-Pattern in Java:
+
+Modellieren Sie mehrer Drucker (zB. SW, Color), das Drucken soll für den Anwender immer gleich funktionieren, sollte aber auf die angegebene Seitenanzahl zum Drucken reagieren.
+
+zB 
+ab 50 Seiten nur SW druck. Überlegen Sie ob sie unter 50Seiten nur Color drucken, oder auch die Art des Druckers beim Drucken mit übergeben wollen...
+
+ab 500 Seiten gar kein Druck
+
+minusseitenanzahl auch abfangen
+
+das Drucken "passieren" mittel SysOutPrint
+
+
+bw und farbe angeben
+bei proxy überschrieben
+
+proxy object set auf drucker bw/farbe während drucken
