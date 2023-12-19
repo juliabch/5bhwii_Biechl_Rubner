@@ -3,9 +3,8 @@ import matplotlib.pyplot as plt
 
 
 def draw():
-    index = 0
-    lottery = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
-               29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
+    index= 0
+    lottery = list(range(1,46))
     lucky_numb = []
 
     for i in range(6):
