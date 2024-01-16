@@ -4,7 +4,7 @@ class Company:
         self.deps = []
     
     def addDepartment(self, department):
-        if isinstance(department, Department) == True:
+        if isinstance(department, Department):
             self.deps.append(department)
     
     #1. Sum of all workers in the company
@@ -12,7 +12,7 @@ class Company:
         count = 0
         for dep in self.deps:
             for person in dep.people:
-                if isinstance(person, Worker) == True:
+                if isinstance(person, Worker):
                     count += 1
         return count  
 
@@ -21,7 +21,7 @@ class Company:
         count = 0
         for dep in self.deps:
             for person in dep.people:
-                if isinstance(person, DepartmentHead) == True:
+                if isinstance(person, DepartmentHead):
                     count += 1
         return count  
 
@@ -44,18 +44,25 @@ class Company:
         count = 0
         for dep in self.deps:
             for person in dep.people:
-                if person.isFemale == True:
+                if person.isFemale:
                     count += 1
         return (count / self.countWorkers()) * 100
 
 
-class Department(Company):
+
+class Department:
     def __init__(self, depName):
         self.depName = depName
         self.people = []
     
     def addPeople(self, person):
-        if isinstance(person, Worker) == True:
+        if isinstance(person, DepartmentHead):
+            for peeps in self.people:
+                if isinstance(person, DepartmentHead):
+                    return print("Already has a departmenthead")
+            
+            self.people.append(person)
+        else:
             self.people.append(person)
 
 class Person:
