@@ -89,6 +89,8 @@ def draw_cards():
     return drawn_cards
 
 
+
+
 def check(cards_to_check):
     card_count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
@@ -213,6 +215,7 @@ def calc_percentage(list_of_occurences_of_hands):
 
 
 if __name__ == '__main__':
+
     unittest.main()
 
     test_cases.test_probabilities()
