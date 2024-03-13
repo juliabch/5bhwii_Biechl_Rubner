@@ -10,13 +10,13 @@ class LinkedList:
 
     def append(self, age):
         new_node = Node(age)
-        if self.head is None: # if the linked list is empty
+        if self.head is None:
             self.head = new_node
             return
-        last_node = self.head # if the linked list is not empty
-        while last_node.next: # find the last node
+        last_node = self.head
+        while last_node.next:
             last_node = last_node.next
-        last_node.next = new_node # append the new node to the last node
+        last_node.next = new_node
 
     def print_list(self):
         cur_node = self.head

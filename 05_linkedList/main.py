@@ -1,10 +1,10 @@
 import random
-from linledList import LinkedList
+from linkedList import LinkedList
 
 if __name__ == '__main__':
 
     a = LinkedList()
-    for _ in range(10):
+    for _ in range(200):
         a.append(random.randint(1, 100))
     print("print list")
     a.print_list()
@@ -15,6 +15,6 @@ if __name__ == '__main__':
     print("use iterator")
     for node in a:
         print(node)
-    # calc the average
-    print("calced Average")
+    # extra - calc the average
+    print("Average")
     print(a.calc_middle())
