@@ -1,4 +1,6 @@
 import random
+import functools
+import time
 import unittest
 import matplotlib.pyplot as plt
 
@@ -59,8 +61,8 @@ class test_cases(unittest.TestCase):
         self.assertFalse(check_straightflush(hand))
         self.assertTrue(check_straightflush(hand2))
 
-    def test_probabilities(self):
-        number_of_draws = 1000000
+    def test_probabilities(self, nrDraws):
+        number_of_draws = nrDraws
         list_of_occurences_of_hands = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         for i in range(0, number_of_draws):
             list_of_occurences_of_hands = check_hand(list_of_occurences_of_hands)
@@ -213,12 +215,28 @@ def calc_percentage(list_of_occurences_of_hands):
         percentage[i] = (list_of_occurences_of_hands[i] / 1000000) * 100
     return percentage
 
+def timer(func):
+    @functools.wraps(func)
+    def wrapper_timer(*args, **kwargs):
+        start_time = time.perf_counter()  # 1
+        value = func(*args, **kwargs)
+        end_time = time.perf_counter()  # 2
+        run_time = end_time - start_time  # 3
+        print(f"Finished {func.__name__!r} in {run_time:.4f} secs")
+        return value
+    return wrapper_timer
+
+@timer
+def runGames():
+    test_cases.test_probabilities(100000)
 
 if __name__ == '__main__':
 
+    runGames()
+
     unittest.main()
 
-    test_cases.test_probabilities()
+    
 
 
 

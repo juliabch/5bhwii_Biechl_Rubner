@@ -93,9 +93,11 @@ if __name__ == '__main__':
     while True:
         print("What do you want to do?")
         print("1. Play a game")
-        print("4. Show Score")
-        print("5 Show SymbolCount")
-        print("6 Delete User")
+        print("2. Show Score")
+        print("3. Exit")
+        print("4. Show User")
+        print("5. Show Symbols")
+        print("6. Delete User")
         choice = input()
         if choice == "1":
             countChoices, countWins = playGame(countChoices, countWins)
